@@ -1,0 +1,15 @@
+services:
+  workbench:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    volumes:
+      - operations_data:/app/backend/data
+    environment:
+      DEMO_ENABLED: "true"
+      WORKER_ENABLED: "true"
+      AI_MODE: "demo"
+    restart: unless-stopped
+
+volumes:
+  operations_data:

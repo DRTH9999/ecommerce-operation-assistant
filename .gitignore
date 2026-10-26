@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+backend/data/
+frontend/node_modules/
+frontend/dist/
+output/
+*.log
+*.tsbuildinfo
+.cache/
+.playwright-cli/
+.idea/
